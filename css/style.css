@@ -801,10 +801,14 @@ textarea {
 
 
 .nav_logo:hover {
-	transform: rotate(180deg);
-	transition: .3s;
+	animation: nav_logo .75s linear infinite;
 }
 
+@keyframes nav_logo {
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 .button_primary:hover {
 	transform: scale(1.1) translateY(-5px);
@@ -834,15 +838,15 @@ textarea {
 	transition: .3s;
 }
 
-@keyframes rgb{
+@keyframes nav{
 	to{
-		filter: hue-rotate(360deg);
+		
 	}
 }
 
 .nav_item:hover {
 	color: #E8C300;
-	animation: rgb 2s linear infinite ;
+	animation: nav 2s linear infinite ;
 	transition: .3s;
 }
 
